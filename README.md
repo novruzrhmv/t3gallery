@@ -16,6 +16,6 @@
 - [x] Update upload button
 - [x] Setup shadcn/ui
 - [x] Add toast notifications
-- [ ] Analaytics (posthog)
+- [x] Analaytics (posthog)
 - [ ] Delete button (/w Server Actions)
 - [ ] Ratelimiting (upstash)
