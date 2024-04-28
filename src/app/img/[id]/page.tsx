@@ -1,10 +1,9 @@
-import FullPageImageView from "~/common/full-image-page";
+import { FullPageImageView } from "~/common/full-page-image-view";
 
 export default function PhotoPage({
   params: { id: photoId },
 }: {
-  params: { id: string };
+  params: { id: number };
 }) {
-  const idAsNumber = Number(photoId);
-  return <FullPageImageView id={idAsNumber} />;
+  return <FullPageImageView id={photoId} />;
 }

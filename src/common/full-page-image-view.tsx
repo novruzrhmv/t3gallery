@@ -2,7 +2,7 @@ import { clerkClient } from "@clerk/nextjs/server";
 import { deleteImage, getImage } from "~/server/queries";
 import { Button } from "../components/ui/button";
 
-export default async function FullPageImageView(props: { id: number }) {
+export async function FullPageImageView(props: { id: number }) {
   const image = await getImage(props.id);
   const uploaderInfo = await clerkClient.users.getUser(image.userId);
 
